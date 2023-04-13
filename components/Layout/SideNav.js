@@ -6,7 +6,8 @@ export default function SideNav({
     offcanvas,
     showOffcanvas,
     logo,
-    language
+    language,
+    links
 }){
 
     return(
@@ -41,31 +42,31 @@ export default function SideNav({
                             
                             {/* Abous Us */}
                             <div className='offcanvas-text'>
-                                <Link href={"#about"} >
+                                <Link href={links.about} >
                                     {language.button_1}
                                 </Link>
                             </div>
 
                             <div className='offcanvas-text'>
-                                <Link href={"#sermon"}>
+                                <Link href={links.sermon}>
                                     {language.button_8}
                                 </Link>
                             </div>
 
                             <div className='offcanvas-text'>
-                                <Link href={"#events"}>
+                                <Link href={links.events}>
                                     {language.button_2}
                                 </Link>
                             </div>
 
                             <div className='offcanvas-text'>
-                                <Link href={"#donation"}>
+                                <Link href={links.donation}>
                                     {language.button_3}
                                 </Link>
                             </div>
 
                             <div className='offcanvas-text'>
-                                <Link href={"#team"}>
+                                <Link href={links.contact}>
                                     {language.button_4}
                                 </Link>
                             </div>

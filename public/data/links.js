@@ -1,5 +1,12 @@
 module.exports = {
 
+    //Routes
+    about: "#about",
+    sermon: "#sermon",
+    events: "#events",
+    donation: "/donation",
+    contact: "#team",
+
     //Contact
     phone: "(980)-290-7074",
     email: "jesus@encuentro.church",

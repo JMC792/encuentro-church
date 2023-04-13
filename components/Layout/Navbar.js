@@ -6,6 +6,7 @@ import navbar_es from 'public/locales/spanish/navbar'
 import Image from "next/image";
 import logo from "../../public/icons/logo.svg";
 import SideNav from './SideNav';
+import links from 'public/data/links';
 
 function Navbar() {
 
@@ -55,35 +56,35 @@ function Navbar() {
 
                                 {/* About */}
                                 <div className="text-[20px] hover:text-yellow-600 transition-colors delay-100">
-                                        <Link href="#about">
+                                        <Link href={links.about}>
                                             {language.button_1}
                                         </Link>
                                 </div>
 
                                 {/* Sermons */}
                                 <div className="text-[20px] hover:text-yellow-600 transition-colors delay-100">
-                                    <Link href="#sermon">
+                                    <Link href={links.sermon}>
                                         {language.button_7}
                                     </Link>
                                 </div>
 
                                 {/* Events */}
                                 <div className="text-[20px] hover:text-yellow-600 transition-colors delay-100">
-                                    <Link href="#events">
+                                    <Link href={links.events}>
                                         {language.button_2}
                                     </Link>
                                 </div>
 
                                 {/* Donation */}
                                 <div className="text-[20px] hover:text-yellow-600 transition-colors delay-100">
-                                        <Link href="#donation">
+                                        <Link href={links.donation}>
                                             {language.button_3}
                                         </Link>
                                 </div>
 
-                                {/*Contact */}
+                                {/*Contact*/}
                                 <div className="text-[20px] hover:text-yellow-600 transition-colors delay-100">
-                                        <Link href="#team">
+                                        <Link href={links.contact}>
                                             {language.button_4}
                                         </Link>
                                 </div>
@@ -116,7 +117,7 @@ function Navbar() {
                 </div>
             </nav>
 
-            <SideNav language={language} showOffcanvas={showOffcanvas} offcanvas={offcanvas} logo={logo}/>
+            <SideNav language={language} links={links} showOffcanvas={showOffcanvas} offcanvas={offcanvas} logo={logo}/>
 
         </Fragment>
     )

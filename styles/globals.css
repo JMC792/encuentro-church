@@ -19,7 +19,6 @@ body {
 .is-sticky.sticky-style-1 {
   @apply transition duration-200 bg-neutral-100 text-black;
 }
-
 .offcanvas-menu-wrap {
   @apply before:absolute before:w-0 before:h-full before:top-0 before:right-0 before:bg-black before:z-10 before:opacity-90 before:ease-linear before:duration-[500ms] delay-[300ms];
 }

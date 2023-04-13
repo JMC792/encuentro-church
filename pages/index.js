@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <Fragment>
         <Navbar/>
-        <Hero language={language} heroButton={facebook}/>
+        <Hero language={language} heroButton={facebook} heroBackground={"h-screen bg-[url('..//public/images/raised-hands.jpg')] bg-cover text-white"}/>
         <Quote language={language}/>
         <About language={language} aboutButton={facebook} svg={aboutSvg}/>
         <Sermons language={language} sermonButton={facebook} svg={relaxing}/>

@@ -6,19 +6,20 @@ import indexSpanish from "public/locales/spanish/index.js"
 function Hero({
     language,
     heroButton,
+    heroBackground
 }) {
 
     const router = useRouter();
     const {locale} = router;
     const t =locale === 'en-US'
         ? indexEnglish
-        : indexSpanish
+        : indexSpanish    
 
     return(
         <Fragment>
 
             {/* Hero Background */}
-            <div className="h-screen bg-back-2 bg-cover" id="header">
+            <div className={heroBackground} id="header">
 
                 {/* Hero Container */}
                 <div className="container flex justify-center">
@@ -27,7 +28,7 @@ function Hero({
                     <div className="pt-[13rem] md:pt-[15rem] lg:pt-[23rem]">
 
                         {/* Hero Text Config */}
-                        <div className="text-center text-neutral-100 space-y-10">
+                        <div className="text-center space-y-10">
 
                             {/* Hero Title */}
                             <div className="text-7xl">
