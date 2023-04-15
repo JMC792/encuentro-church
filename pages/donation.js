@@ -7,7 +7,7 @@ import {useRouter} from "next/router";
 import { facebook } from "public/data/links"
 import aboutSvg from "public/images/praying.jpg"
 import About from "@components/Homepage/About";
-import Hero from "@components/Hero/Hero";
+import Hero2 from "@components/Hero/Hero2";
 import hands from "public/images/hands.png"
 
 export default function Donation(){
@@ -16,12 +16,12 @@ export default function Donation(){
     const {locale} = router;
     const language = locale === 'en-US'
         ? englishLocale
-        :spanishLocale
+        : spanishLocale
 
     return(
         <Fragment>
             <Navbar/>
-            <Hero language={language} heroButton={facebook} heroBackground={"h-screen bg-[url('..//public/images/coffee.jpg')] bg-cover text-neutral-200 "}/>
+            <Hero2 language={language} heroButton={facebook} heroBackground={"h-screen bg-[url('..//public/images/coffee.jpg')] bg-cover text-neutral-200 "}/>
             <Sermons language={language} sermonButton={facebook} svg={aboutSvg}/>
             <About language={language} aboutButton={"https://cash.app/$EncuentroChurch"} svg={hands}/>
         </Fragment>
