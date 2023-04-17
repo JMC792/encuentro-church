@@ -4,11 +4,13 @@ import {useRouter} from "next/router";
 import navbar_en from 'public/locales/english/navbar'
 import navbar_es from 'public/locales/spanish/navbar'
 import Image from "next/image";
-import logo from "../../public/icons/logo.svg";
+import logo from "public/icons/logo.svg";
 import SideNav from './SideNav';
 import links from 'public/data/links';
 
-function Navbar() {
+function Navbar({
+    theme
+}) {
 
     //Determines Locales
     const router = useRouter();
@@ -37,9 +39,14 @@ function Navbar() {
             : navbar.classList.remove('is-sticky');
     };
 
+    const themeColor = (theme == "light")
+                ? theme = "absolute w-full z-10 top-0 text-white"
+                : theme = "absolute w-full z-10 top-0 text-black"
+
     return(
         <Fragment>
-            <nav className="absolute w-full z-10 top-0 text-white">
+            
+            <nav className={themeColor}>
                 <div className="header-selection sticky-style-1 py-4">
                     <div className="container mx-auto">
 

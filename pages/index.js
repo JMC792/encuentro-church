@@ -1,4 +1,4 @@
-import Navbar from "@components/Layout/Navbar";
+import Navbar from "@components/Layout/Navbar/Navbar";
 import {Fragment} from "react";
 import Hero from "@components/Hero/Hero";
 import About from "@components/Homepage/About";
@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <Fragment>
-        <Navbar/>
+        <Navbar theme={"light"}/>
         <Hero language={language} heroButton={facebook} heroBackground={"h-screen bg-[url('..//public/images/raised-hands.jpg')] bg-cover text-white"}/>
         <Quote language={language}/>
         <About language={language} aboutButton={facebook} svg={aboutSvg}/>

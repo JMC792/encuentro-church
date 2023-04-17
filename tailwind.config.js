@@ -11,7 +11,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'back-1': "url('..//public/images/qr-code.png')",
-        'back-2': "url('..//public/images/raised-hands.jpg')",
+        'back-2': "url('..//public/images/donation/raisedHands.jpg')",
         'back-3': "url('..//public/images/coffee.jpg')",
         'back-4': "url('..//public/images/pink-background-2.jpg')",
       }
